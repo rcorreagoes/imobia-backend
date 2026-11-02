@@ -10,7 +10,7 @@ import { PredictPropertyDto } from './dto/predict-property.dto.js';
 @Injectable()
 export class MlService {
   private readonly pythonApiUrl =
-    process.env.PYTHON_ML_URL || 'http://localhost:8000';
+    process.env.PYTHON_ML_URL || 'http://engine:8000';
 
   async healthCheck(): Promise<any> {
     try {
